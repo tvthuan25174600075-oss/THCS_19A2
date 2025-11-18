@@ -1,0 +1,25 @@
+n = int(input(" nhập n: "))
+S1 = 0
+i = 1
+while i <= n:
+    S1 += i
+    i += 1
+S2 = 1
+i = 1
+while i < n:
+    S2 *= i
+    i += 1
+S3 = 0
+i = 1
+while i <= n:
+    S3 += ((-1)**(i+1)) * (1/i)
+    i += 1
+S4 = 0
+k = 0
+while k <= n:
+    S4 += k / (k + 2)
+    k += 1
+print("S1 =", S1)
+print("S2 =", S2)
+print("S3 =", S3)
+print("S4 =", S4)
